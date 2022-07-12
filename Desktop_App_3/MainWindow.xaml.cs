@@ -24,5 +24,19 @@ namespace Desktop_App_3
         {
             InitializeComponent();
         }
+
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+
+            Application.Current.Shutdown();
+        }
+
+        private void Go_To_Signup_Page(object sender, RoutedEventArgs e)
+        {
+            Window2 objSecondWindow = new Window2();
+            this.Visibility = Visibility.Hidden;
+            objSecondWindow.Show();
+        }
     }
 }

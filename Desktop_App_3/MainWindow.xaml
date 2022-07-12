@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:Desktop_App_3"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+    <StackPanel>
+        <StackPanel>
+            <Button Content="Signup" Click="Go_To_Signup_Page" Margin="0,295,0,101" HorizontalAlignment="Center" Width="150"/>
+        </StackPanel>
+    </StackPanel>
 </Window>
