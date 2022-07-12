@@ -34,9 +34,16 @@ namespace Desktop_App_3
 
         private void Go_To_Signup_Page(object sender, RoutedEventArgs e)
         {
-            Window2 objSecondWindow = new Window2();
+            Window2 objSignup = new Window2();
             this.Visibility = Visibility.Hidden;
-            objSecondWindow.Show();
+            objSignup.Show();
+        }
+
+        private void Go_To_Login_Page(object sender, RoutedEventArgs e)
+        {
+            LoginPage objLoginPage = new LoginPage();
+            this.Visibility = Visibility.Hidden;
+            objLoginPage.Show();
         }
     }
 }

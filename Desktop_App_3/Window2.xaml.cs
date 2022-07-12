@@ -48,7 +48,12 @@ namespace Desktop_App_3
             else
             {
                 MessageBox.Show($"Username - {UsernameInput} and Password - {PasswordInput} Successfully Set up");
+                MainWindow objMainWindow = new MainWindow();
+                this.Visibility = Visibility.Hidden;
+                objMainWindow.Show();
             }
         }
-    }
+
+        
+}
 }
