@@ -22,6 +22,8 @@ namespace Desktop_App_3
 
         public string UsernameInput = "";
         public string PasswordInput = "";
+        public bool Punctuation = false;
+        public Array UsernameInputSplit;
         public Window2()
         {
             InitializeComponent();
@@ -39,10 +41,25 @@ namespace Desktop_App_3
             ///UsernameLabel.Content = "Le j";
             UsernameInput = UsernameInputBox.Text;
             PasswordInput = PasswordInputBox.Text;
+            char[] passwordCharArr = PasswordInput.ToCharArray();
+
+            foreach (char c in passwordCharArr)
+            {
+
+                if (c.Equals('!') || c.Equals('.') || c.Equals(',') || c.Equals(';') || c.Equals('?')){
+                    
+                    Punctuation = true;
+                }
+            }
 
             if (UsernameInput == "" || PasswordInput == "")
             {
                 MessageBox.Show($"Username or Password is null. Please enter something.");
+            }
+
+            else if (Punctuation == false)
+            {
+                MessageBox.Show($"Password must contain one of the following: ! . , ; ?");
             }
 
             else

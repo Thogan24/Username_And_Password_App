@@ -33,10 +33,10 @@ namespace Desktop_App_3
             UsernameInput_Login = UsernameInputBox_Login.Text;
             PasswordInput_Login = PasswordInputBox_Login.Text;
 
-            if (UsernameInput_Login = UsernameInput && PasswordInput_Login = PasswordInput)
-            {
-                LoginCorrect = true;
-            }
+            //if (UsernameInput_Login = UsernameInput && PasswordInput_Login = PasswordInput)
+            //{
+            //    LoginCorrect = true;
+            //}
             if (LoginCorrect == true)
             {
                 MainPage objMainPage = new MainPage();
