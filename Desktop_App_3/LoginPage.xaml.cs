@@ -19,6 +19,9 @@ namespace Desktop_App_3
     /// </summary>
     public partial class LoginPage : Window
     {
+        public string UsernameInput_Login = "";
+        public string PasswordInput_Login = "";
+
         bool LoginCorrect = false;
         public LoginPage()
         {
@@ -27,6 +30,13 @@ namespace Desktop_App_3
 
         private void Login_Button_Click(object sender, RoutedEventArgs e)
         {
+            UsernameInput_Login = UsernameInputBox_Login.Text;
+            PasswordInput_Login = PasswordInputBox_Login.Text;
+
+            if (UsernameInput_Login = UsernameInput && PasswordInput_Login = PasswordInput)
+            {
+                LoginCorrect = true;
+            }
             if (LoginCorrect == true)
             {
                 MainPage objMainPage = new MainPage();

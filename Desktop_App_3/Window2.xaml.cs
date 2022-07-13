@@ -20,8 +20,8 @@ namespace Desktop_App_3
     public partial class Window2 : Window
     {
 
-        private string UsernameInput = "";
-        private string PasswordInput = "";
+        public string UsernameInput = "";
+        public string PasswordInput = "";
         public Window2()
         {
             InitializeComponent();
@@ -53,6 +53,8 @@ namespace Desktop_App_3
                 objMainWindow.Show();
             }
         }
+
+        
 
         
 }
