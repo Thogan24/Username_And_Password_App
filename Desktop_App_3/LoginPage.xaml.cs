@@ -32,6 +32,10 @@ namespace Desktop_App_3
         {
             UsernameInput_Login = UsernameInputBox_Login.Text;
             PasswordInput_Login = PasswordInputBox_Login.Text;
+            //PasswordInput passwordinput = new PasswordInput();
+            Window2 window2 = new Window2();
+            MessageBox.Show(window2.UsernameInput);
+            
 
             //if (UsernameInput_Login = UsernameInput && PasswordInput_Login = PasswordInput)
             //{

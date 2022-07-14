@@ -1,10 +1,13 @@
 ﻿<Window x:Class="Desktop_App_3.Window2"
+        
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
         xmlns:local="clr-namespace:Desktop_App_3"
         mc:Ignorable="d"
+        
         Title="Signup Page" Height="450" Width="800">
     <Grid>
         <Label x:Name="UsernameLabel" Content="Username" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,98,0,306"/>

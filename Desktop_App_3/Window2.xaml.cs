@@ -38,7 +38,7 @@ namespace Desktop_App_3
 
         private void Window2_Click(object sender, RoutedEventArgs e)
         {
-            ///UsernameLabel.Content = "Le j";
+            
             UsernameInput = UsernameInputBox.Text;
             PasswordInput = PasswordInputBox.Text;
             char[] passwordCharArr = PasswordInput.ToCharArray();
