@@ -69,10 +69,24 @@ namespace Desktop_App_3
                 this.Visibility = Visibility.Hidden;
                 objMainWindow.Show();
             }
+
+
+
         }
 
-        
+        private void onMouseEnter(object sender, MouseEventArgs e)
+        {
 
-        
-}
+            SignupButton.Content = "SIGNUP BRUH";
+
+        }
+
+        private void onMouseLeave(object sender, MouseEventArgs e)
+        {
+            SignupButton.Content = "Signup";
+        }
+
+
+
+    }
 }

@@ -14,6 +14,6 @@
         <Label x:Name="PasswordLabel" Content="Password" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,182,0,222"/>
         <TextBox Margin="0,133,0,263" x:Name="UsernameInputBox" Width="223" HorizontalAlignment="Center"/>
         <TextBox Margin="0,217,0,179" x:Name="PasswordInputBox" Width="224" HorizontalAlignment="Center"/>
-        <Button Content="Signup" Click="Window2_Click" Margin="0,295,0,85" HorizontalAlignment="Center" Width="188"/>
+        <Button x:Name="SignupButton" Content="Signup" MouseEnter="onMouseEnter" MouseLeave="onMouseLeave" Click="Window2_Click" Margin="0,295,0,85" HorizontalAlignment="Center" Width="188"/>
     </Grid>
 </Window>
